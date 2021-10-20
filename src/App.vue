@@ -20,20 +20,8 @@
           width="100"
         />
       </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
-
-    <v-main>
+    <v-main  class="overflow-x-auto main-bg">
       <router-view />
     </v-main>
   </v-app>
@@ -45,8 +33,16 @@ import Vue from "vue";
 export default Vue.extend({
   name: "App",
 
+  components: {},
   data: () => ({
     //
   }),
 });
 </script>
+
+<style scoped>
+.main-bg {
+  background-image: url(https://cdn.vuetifyjs.com/images/parallax/material.jpg);
+  background-repeat: repeat;
+}
+</style>
