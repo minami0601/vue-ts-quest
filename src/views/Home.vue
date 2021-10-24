@@ -109,7 +109,6 @@ export default Vue.extend({
 	},
 });
 </script>
-
 <style>
 .move-cursor {
 	cursor: pointer;
